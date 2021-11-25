@@ -5,6 +5,8 @@ window.onload = async () => {
     let data = await response.json();
 
     // place all values into the correct HTML fields
+    console.log(data);
+    console.log(Object.keys(data));
     for (let key of Object.keys(data)) {
         if (data[key] instanceof Array) {
             // append with font size depending on relative score
