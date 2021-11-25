@@ -1,7 +1,7 @@
 let stats = {};
 
 window.onload = async () => {
-    let response = await fetch('json');
+    let response = await fetch('data.json');
     let data = await response.json();
 
     // place all values into the correct HTML fields
