@@ -92,8 +92,9 @@ async function submitDescription() {
     console.log('body is', JSON.stringify(stats));
 
     const body = JSON.stringify(stats);
-    const response = await fetch('description', {
+    const response = await fetch('http://90.145.161.254:5000/description', {
             method: 'POST',
+            mode: 'cors',
             headers: {
                 'Content-Type': 'application/json',
             },
