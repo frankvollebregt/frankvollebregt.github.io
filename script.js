@@ -102,9 +102,9 @@ async function submitDescription() {
             body: body,
         }
     );
-    $.post({
+    // $.post({
 
-    });
+    // });
 
     return response;
 }
