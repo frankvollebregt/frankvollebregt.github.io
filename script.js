@@ -1,8 +1,9 @@
 let stats = {};
+let allData;
 
 window.onload = async () => {
     let response = await fetch('data.json');
-    let allData = await response.json();
+    allData = await response.json();
     let data = allData[Math.floor(Math.random() * allData.length)];
 
     // place all values into the correct HTML fields
