@@ -6,46 +6,48 @@ let index = -1;
 window.onload = async () => {
     let response = await fetch('data.json');
     allData = await response.json();
-    let data = allData[Math.floor(Math.random() * allData.length)];
+    
+    showNextEntry();
+    // let data = allData[Math.floor(Math.random() * allData.length)];
 
-    // place all values into the correct HTML fields
-    console.log(data);
-    console.log(Object.keys(data));
-    for (let key of Object.keys(data)) {
-        if (data[key] instanceof Array) {
-            // append with font size depending on relative score
-            let minScore = data[key][data[key].length - 1].score;
-            let maxScore = data[key][0].score;
-            let fontSizes = data[key].map((entry, index) => {
-                return mapNumberToRange(entry.score, minScore, maxScore, 16, 28) + 'px';
-            });
+    // // place all values into the correct HTML fields
+    // console.log(data);
+    // console.log(Object.keys(data));
+    // for (let key of Object.keys(data)) {
+    //     if (data[key] instanceof Array) {
+    //         // append with font size depending on relative score
+    //         let minScore = data[key][data[key].length - 1].score;
+    //         let maxScore = data[key][0].score;
+    //         let fontSizes = data[key].map((entry, index) => {
+    //             return mapNumberToRange(entry.score, minScore, maxScore, 16, 28) + 'px';
+    //         });
 
-            // create and append list items
-            let items = data[key].map((entry, index) => {
-                let listItem = document.createElement('li');
-                console.log('setting font size of', entry.tag, 'to', fontSizes[index]);
-                listItem.style.fontSize = fontSizes[index];
-                listItem.appendChild(document.createTextNode(entry.tag));
-                return listItem;
-            });
+    //         // create and append list items
+    //         let items = data[key].map((entry, index) => {
+    //             let listItem = document.createElement('li');
+    //             console.log('setting font size of', entry.tag, 'to', fontSizes[index]);
+    //             listItem.style.fontSize = fontSizes[index];
+    //             listItem.appendChild(document.createTextNode(entry.tag));
+    //             return listItem;
+    //         });
 
-            items.forEach((item) => {
-                document.getElementById(key).appendChild(item);
-            });
-        } else if (key.includes('url')) {
-            document.getElementById(key).href = data[key];
-        } else if (key === 'img') {
-            // image is source
-            document.getElementById('img').src = data[key];
-        } else {
-            // just set the inner text
-            document.getElementById(key).innerText = data[key];
-        }
-    }
+    //         items.forEach((item) => {
+    //             document.getElementById(key).appendChild(item);
+    //         });
+    //     } else if (key.includes('url')) {
+    //         document.getElementById(key).href = data[key];
+    //     } else if (key === 'img') {
+    //         // image is source
+    //         document.getElementById('img').src = data[key];
+    //     } else {
+    //         // just set the inner text
+    //         document.getElementById(key).innerText = data[key];
+    //     }
+    // }
 
-    // start the timer
-    stats.title = data['ctx_title'];
-    stats.startTime = new Date().getTime();
+    // // start the timer
+    // stats.title = data['ctx_title'];
+    // stats.startTime = new Date().getTime();
 }
 
 function showNextEntry() {
