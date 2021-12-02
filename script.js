@@ -55,7 +55,7 @@ function clearFields() {
     
     // hide revealed content
     document.getElementById('ctx').hidden = true;
-    document.getElementById('img_caption').hidden = true;
+    // document.getElementById('img_caption').hidden = true;
 
     // clear the input field
     document.getElementById('user_description').value = "";
