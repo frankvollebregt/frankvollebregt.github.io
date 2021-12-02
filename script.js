@@ -50,11 +50,31 @@ window.onload = async () => {
     // stats.startTime = new Date().getTime();
 }
 
-function showNextEntry() {
-    index += 1;
+function clearFields() {
     stats = {};
+    
+    // hide revealed content
     document.getElementById('ctx').hidden = true;
     document.getElementById('img_caption').hidden = true;
+
+    // clear the input field
+    document.getElementById('user_description').value = "";
+
+    // clear tags
+    let ctxTags = document.getElementById('ctx_tags');
+    while (ctxTags.firstChild) {
+        ctxTags.removeChild(ctxTags.firstChild);
+    }
+
+    let imgTags = document.getElementById('img_tags');
+    while (img.firstChild) {
+        img.removeChild(img.firstChild);
+    }
+}
+
+function showNextEntry() {
+    index += 1;
+    clearFields();
 
     if (index >= allData.length) return;
 
