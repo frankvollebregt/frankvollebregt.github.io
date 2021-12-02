@@ -184,7 +184,7 @@ async function submitDescription() {
 
     // });
 
-    return response;
+    // return response;
 }
 
 // utility function to map numbers (for font size)
