@@ -51,7 +51,7 @@ window.onload = async () => {
 }
 
 function showNextEntry() {
-    index = index++;
+    index += 1;
     stats = {};
     document.getElementById('ctx').hidden = true;
     document.getElementById('img_caption').hidden = true;
