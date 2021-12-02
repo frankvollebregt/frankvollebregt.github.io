@@ -1,10 +1,59 @@
 let stats = {};
+let allStats = [];
 let allData;
+let index = -1;
 
 window.onload = async () => {
     let response = await fetch('data.json');
     allData = await response.json();
     let data = allData[Math.floor(Math.random() * allData.length)];
+
+    // place all values into the correct HTML fields
+    console.log(data);
+    console.log(Object.keys(data));
+    for (let key of Object.keys(data)) {
+        if (data[key] instanceof Array) {
+            // append with font size depending on relative score
+            let minScore = data[key][data[key].length - 1].score;
+            let maxScore = data[key][0].score;
+            let fontSizes = data[key].map((entry, index) => {
+                return mapNumberToRange(entry.score, minScore, maxScore, 16, 28) + 'px';
+            });
+
+            // create and append list items
+            let items = data[key].map((entry, index) => {
+                let listItem = document.createElement('li');
+                console.log('setting font size of', entry.tag, 'to', fontSizes[index]);
+                listItem.style.fontSize = fontSizes[index];
+                listItem.appendChild(document.createTextNode(entry.tag));
+                return listItem;
+            });
+
+            items.forEach((item) => {
+                document.getElementById(key).appendChild(item);
+            });
+        } else if (key.includes('url')) {
+            document.getElementById(key).href = data[key];
+        } else if (key === 'img') {
+            // image is source
+            document.getElementById('img').src = data[key];
+        } else {
+            // just set the inner text
+            document.getElementById(key).innerText = data[key];
+        }
+    }
+
+    // start the timer
+    stats.title = data['ctx_title'];
+    stats.startTime = new Date().getTime();
+}
+
+function showNextEntry() {
+    index++;
+
+    if (index >= data.length) return;
+
+    let data = allData[index];
 
     // place all values into the correct HTML fields
     console.log(data);
@@ -85,23 +134,27 @@ async function submitDescription() {
     stats.endTime = new Date().getTime();
     stats.description = description;
 
+    allStats.push(stats);
+
     // for now, display to the user
     console.log(stats);
     document.getElementById('result-object').hidden = false;
-    document.getElementById('result-object').innerText = JSON.stringify(stats, undefined, 2);
+    document.getElementById('result-object').innerText = JSON.stringify(allStats, undefined, 2);
 
-    console.log('body is', JSON.stringify(stats));
+    showNextEntry();
 
-    const body = JSON.stringify(stats);
-    const response = await fetch('http://90.145.161.254:5000/description', {
-            method: 'POST',
-            mode: 'cors',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: body,
-        }
-    );
+    // console.log('body is', JSON.stringify(stats));
+
+    // const body = JSON.stringify(stats);
+    // const response = await fetch('http://90.145.161.254:5000/description', {
+    //         method: 'POST',
+    //         mode: 'cors',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: body,
+    //     }
+    // );
     // $.post({
 
     // });
