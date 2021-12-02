@@ -67,8 +67,8 @@ function clearFields() {
     }
 
     let imgTags = document.getElementById('img_tags');
-    while (img.firstChild) {
-        img.removeChild(img.firstChild);
+    while (imgTags.firstChild) {
+        imgTags.removeChild(imgTags.firstChild);
     }
 }
 
