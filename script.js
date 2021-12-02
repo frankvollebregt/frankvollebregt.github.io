@@ -49,7 +49,10 @@ window.onload = async () => {
 }
 
 function showNextEntry() {
-    index++;
+    index = index++;
+    stats = {};
+    document.getElementById('ctx').hidden = true;
+    document.getElementById('img_caption').hidden = true;
 
     if (index >= data.length) return;
 
