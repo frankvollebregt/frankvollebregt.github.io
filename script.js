@@ -56,7 +56,7 @@ function showNextEntry() {
     document.getElementById('ctx').hidden = true;
     document.getElementById('img_caption').hidden = true;
 
-    if (index >= data.length) return;
+    if (index >= allData.length) return;
 
     let data = allData[index];
 
