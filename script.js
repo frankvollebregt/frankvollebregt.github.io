@@ -80,6 +80,8 @@ function showNextEntry() {
         console.log('completed final task! Showing finished view.');
         document.getElementById('task-view').hidden = true;
         document.getElementById('finished-view').hidden = false;
+
+        document.getElementById('result-object-final').innerText = JSON.stringify(allStats, undefined, 2);
         return;
     }
 
@@ -168,8 +170,8 @@ async function submitDescription() {
 
     // for now, display to the user
     console.log(stats);
-    document.getElementById('result-object').hidden = false;
-    document.getElementById('result-object').innerText = JSON.stringify(allStats, undefined, 2);
+    // document.getElementById('result-object').hidden = false;
+    // document.getElementById('result-object').innerText = JSON.stringify(allStats, undefined, 2);
 
     showNextEntry();
 
