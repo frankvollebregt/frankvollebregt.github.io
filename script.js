@@ -76,7 +76,12 @@ function showNextEntry() {
     index += 1;
     clearFields();
 
-    if (index >= allData.length) return;
+    if (index >= allData.length) {
+        console.log('completed final task! Showing finished view.');
+        document.getElementById('task-view').hidden = true;
+        document.getElementById('finished-view').hidden = false;
+        return;
+    }
 
     let data = allData[index];
 
