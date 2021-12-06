@@ -166,7 +166,7 @@ function downloadData() {
     console.log('downloading json...');
 
     let element = document.createElement('a');
-    element.setAttribute('href', 'application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(allStats)));
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(JSON.stringify(allStats)));
     element.setAttribute('download', 'result.json');
 
     // add the new element to the page
