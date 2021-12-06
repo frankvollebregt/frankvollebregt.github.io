@@ -202,4 +202,16 @@ function mapNumberToRange(number, in_min, in_max, out_min, out_max) {
 
 function downloadData() {
     console.log('downloading json...');
+
+    let element = document.createElement('a');
+    element.setAttribute('href', 'application:json;charset=utf-8,' + encodeURIComponent(JSON.stringify(allStats)));
+    element.setAttribute('download', filename);
+
+    // add the new element to the page
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
 }
