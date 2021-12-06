@@ -120,11 +120,24 @@ function showOrHideFullContext() {
     if (!stats.revealContextTime) stats.revealContextTime = new Date().getTime();
 }
 
+function showCopyWarningToast() {
+    console.warn('showing copy warning toast');
+    $('#toast-warn-copy').toast('show');
+        setTimeout(() => {
+            $('#toast-warn-copy').toast('hide');
+        }, 2000);
+    navigator.clipboard.writeText('');    
+    return false;
+}
+
 async function submitDescription() {
     let description = document.getElementById('user_description').value;
     if (!description || description.length < 2) {
         console.warn('Submitted description was not present or too short!');
-        alert('Submitted description was not present or too short!');
+        $('#toast-warn-short').toast('show');
+        setTimeout(() => {
+            $('#toast-warn-short').toast('hide');
+        }, 2000);
         return;
     }
 
