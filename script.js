@@ -176,4 +176,8 @@ function downloadData() {
 
 function copyData() {
     navigator.clipboard.writeText(JSON.stringify(allStats));
+    $('#toast-copy').toast('show');
+        setTimeout(() => {
+            $('#toast-copy').toast('hide');
+        }, 2000);
 }
