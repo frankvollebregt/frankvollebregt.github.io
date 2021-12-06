@@ -6,6 +6,12 @@ let index = -1;
 window.onload = async () => {
     let response = await fetch('data.json');
     allData = await response.json();
+
+    document.addEventListener('keydown', (e) => {
+        if (e.code == 'Enter') {
+            this.submitDescription();
+        }
+    });
     
     showNextEntry();
 }
@@ -15,7 +21,6 @@ function clearFields() {
     
     // hide revealed content
     document.getElementById('ctx').hidden = true;
-    // document.getElementById('img_caption').hidden = true;
 
     // clear the input field
     document.getElementById('user_description').value = "";
@@ -119,6 +124,7 @@ async function submitDescription() {
     let description = document.getElementById('user_description').value;
     if (!description || description.length < 2) {
         console.warn('Submitted description was not present or too short!');
+        alert('Submitted description was not present or too short!');
         return;
     }
 
@@ -130,30 +136,7 @@ async function submitDescription() {
 
     allStats.push(stats);
 
-    // for now, display to the user
-    console.log(stats);
-    // document.getElementById('result-object').hidden = false;
-    // document.getElementById('result-object').innerText = JSON.stringify(allStats, undefined, 2);
-
     showNextEntry();
-
-    // console.log('body is', JSON.stringify(stats));
-
-    // const body = JSON.stringify(stats);
-    // const response = await fetch('http://90.145.161.254:5000/description', {
-    //         method: 'POST',
-    //         mode: 'cors',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: body,
-    //     }
-    // );
-    // $.post({
-
-    // });
-
-    // return response;
 }
 
 // utility function to map numbers (for font size)
@@ -176,4 +159,8 @@ function downloadData() {
     element.click();
 
     document.body.removeChild(element);
+}
+
+function copyData() {
+    navigator.clipboard.writeText(JSON.stringify(allStats));
 }
