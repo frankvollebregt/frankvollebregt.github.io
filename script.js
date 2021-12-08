@@ -7,7 +7,7 @@ window.onload = async () => {
     let params = new URLSearchParams(window.location.search);
     let dataPath = params.get('data') ? params.get('data') : 'data.json';
 
-    let response = await fetch('data.json');
+    let response = await fetch(dataPath);
     allData = await response.json();
 
     document.addEventListener('keydown', (e) => {
