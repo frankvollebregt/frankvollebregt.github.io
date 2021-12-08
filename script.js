@@ -4,6 +4,9 @@ let allData;
 let index = -1;
 
 window.onload = async () => {
+    let params = new URLSearchParams(window.location.search);
+    let dataPath = params.get('data') ? params.get('data') : 'data.json';
+
     let response = await fetch('data.json');
     allData = await response.json();
 
