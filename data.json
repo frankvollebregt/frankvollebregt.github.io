@@ -263,5 +263,42 @@
             }
         ],
         "type_name": "een educatief lesprogramma"
+    },
+    {
+        "ctx_title": "Breinquiz",
+        "ctx_url": "https://www.nemosciencemuseum.nl/nl/onderwijs/voortgezet-onderwijs/lesmateriaal/lesmateriaal/biologie-voor-vo-biowetenschappen-en-maatschappij/",
+        "ctx_caption": "-",
+        "ctx": "4. Met welke scans zijn de afbeelding hieronder gemaakt?\n\nA\t\tB\na. MRI-scan\t\tPET-scan\nb. fMRI-scan\t\tCT-scan\nc. CT-scan\t\tMRI-scan\nd. PET-scan\t\tfMRI-scan",
+        "ctx_tags": [
+            {
+                "tag": "ct",
+                "score": 0.5975
+            },
+            {
+                "tag": "scans",
+                "score": 0.5864
+            },
+            {
+                "tag": "fmri",
+                "score": 0.5826
+            },
+            {
+                "tag": "scan",
+                "score": 0.5772
+            },
+            {
+                "tag": "gemaakt",
+                "score":0.5435
+            }
+        ],
+        "img": "edu3.png",
+        "img_caption": "diagram",
+        "img_tags": [
+            {
+                "tag": "text",
+                "score": 0.8473471403121948
+            }
+        ],
+        "type_name": "een educatief lesprogramma"
     }
 ]
