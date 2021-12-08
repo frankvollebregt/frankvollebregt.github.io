@@ -15,6 +15,12 @@ window.onload = async () => {
             this.submitDescription();
         }
     });
+
+    document.getElementById('ctx_url').addEventListener('click', (e) => {if (!stats.clickSourceTime) stats.clickSourceTime = new Date().getTime();});
+
+    document.addEventListener('blur', () => {
+        if (!stats.leftWindowTime) stats.leftWindowTime = new Date().getTime();
+    });
     
     showNextEntry();
 }
@@ -125,6 +131,9 @@ function showOrHideFullContext() {
 
 function showCopyWarningToast() {
     console.warn('showing copy warning toast');
+
+    if (!stats.attemptCopyTime) stats.attemptCopyTime = new Date().getTime();
+
     $('#toast-warn-copy').toast('show');
         setTimeout(() => {
             $('#toast-warn-copy').toast('hide');
