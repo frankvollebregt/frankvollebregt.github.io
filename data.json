@@ -154,5 +154,57 @@
                 "score": 0.8539779186248779
             }
         ]
+    },
+    {
+        "ctx_title": "Gegevens lijkvinding",
+        "ctx_url": "https://www.nemosciencemuseum.nl/nl/onderwijs/voortgezet-onderwijs/lesmateriaal/lesmateriaal/biologie-voor-vo-biowetenschappen-en-maatschappij/",
+        "ctx_caption": "-",
+        "ctx": "Datum en tijd: vrijdag 3 september, 15.40\nRuimte: De kamer waar de overledene is gevonden ligt op de begane grond. Een schuifdeur naar de achtertuin staat op een kier. De temperatuur in de kamer is vastgesteld op 18°C. \nLigging: De overledene ligt plat op zijn rug op een driezitsbank. Zijn hoofd ligt op een kussen. De rechterarm van de overledene ligt langs zijn lichaam; de linkerarm ligt op zijn borst. \nKleding: De overledene is gekleed in een dunne pantalon, een boxershort en een hemd zonder mouwen. Op de borstkas van de overledene ligt een pistool. \nLichaam: Midden op de borst (5 cm links van de rechter tepel) is een schotwond zichtbaar. Op de bovenzijde van de rechterarm, en de rechterschouder zijn lijkvlekken aanwezig (zie afbeelding). Lijkvlekken zijn wegdrukbaar. De lichaamstemperatuur (rectaal) is vastgesteld op 35,0°C.",
+        "ctx_tags": [
+            {
+                "tag": "lichaamstemperatuur",
+                "score": 0.6174
+            },
+            {
+                "tag": "linkerarm",
+                "score": 0.6024
+            },
+            {
+                "tag": "gekleed",
+                "score": 0.5933
+            },
+            {
+                "tag": "lijkvlekken",
+                "score": 0.586
+            },
+            {
+                "tag": "schotwond",
+                "score": 0.5816
+            }
+        ],
+        "img": "edu1.png",
+        "img_caption": "diagram",
+        "img_tags": [
+            {
+                "tag": "sketch",
+                "score": 0.9955991506576538
+            },
+            {
+                "tag": "drawing",
+                "score": 0.9904026985168457
+            },
+            {
+                "tag": "illustration",
+                "score": 0.8790888786315918
+            },
+            {
+                "tag": "cartoon",
+                "score": 0.798235297203064
+            },
+            {
+                "tag": "ink",
+                "score": 0.7358826398849487
+            }
+        ]
     }
 ]
