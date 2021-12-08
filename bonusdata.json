@@ -35,5 +35,58 @@
             }
         ],
         "type_name": "een educatief lesprogramma"
+    },
+    {
+        "ctx_title": "Grot van Cosquer",
+        "ctx_url": "https://www.nemosciencemuseum.nl/nl/onderwijs/voortgezet-onderwijs/lesmateriaal/lesmateriaal/biologie-voor-vo-biowetenschappen-en-maatschappij/",
+        "ctx_caption": "Grot van Cosquer",
+        "ctx": "De Grot van Cosquer is een grot die zo'n 37 meter onder water ligt en waar tekeningen van dieren zijn aangebracht, net zoals in de grotten van Lascaux. De grot ligt in de Calanque de Morgiou, dicht bij Marseille. De tekeningen kunnen worden gedateerd rond 18.500 v. Chr. en zijn nog goed zichtbaar, al ligt de grot al zo lang onder water. Toen deze tekeningen gemaakt werden in de prehistorie lag deze grot nog niet onder water. De grot werd in 1985 ontdekt door Henri Cosquer, maar de tekeningen werden pas in 1991 bekend voor het grote publiek.",
+        "ctx_tags": [
+            {
+                "tag": "bekend",
+                "score": 0.5965
+            },
+            {
+                "tag": "lag",
+                "score": 0.5797
+            },
+            {
+                "tag": "grot",
+                "score": 0.5763
+            },
+            {
+                "tag": "dieren",
+                "score": 0.5629
+            },
+            {
+                "tag": "water",
+                "score": 0.5601
+            }
+        ],
+        "img": "edu3.png",
+        "img_caption": "a yellow and black tree",
+        "img_tags": [
+            {
+                "tag": "openlucht",
+                "score": 0.9880
+            },
+            {
+                "tag": "boom",
+                "score": 0.9816
+            },
+            {
+                "tag": "water",
+                "score": 0.8795
+            },
+            {
+                "tag": "rif",
+                "score": 0.7302
+            },
+            {
+                "tag": "abstract",
+                "score": 0.7116
+            }
+        ],
+        "type_name": "een informatief boek of tijdschrift"
     }
 ]
