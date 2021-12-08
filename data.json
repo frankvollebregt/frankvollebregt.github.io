@@ -316,5 +316,164 @@
             }
         ],
         "type_name": "een educatief lesprogramma"
+    },
+    {
+        "ctx_title": "Dronken man steelt tractor en laat in Duitse plaats spoor van vernieling achter",
+        "ctx_url": "https://nos.nl/artikel/2367020-dronken-man-steelt-tractor-en-laat-in-duitse-plaats-spoor-van-vernieling-achter",
+        "ctx_caption": "KREISPOLIZEIBEHÖRDE OBERBERGISCHER KREIS",
+        "ctx": "Een dronken 23-jarige man uit het Duitse Radevormwald heeft gisteravond een tractor gestolen en daarna een spoor van vernieling in de gemeente achtergelaten. De tractor was uitgerust met een vier meter brede sneeuwschuiver, schrijven Duitse media. Hij heeft voor bijna 100.000 euro aan schade aan gebouwen en voertuigen aangericht in de gemeente in de deelstaat Noordrijn-Westfalen. Hij ramde onder meer een gevel van een huis, een schutting, een garage en vijf auto's. Bij de botsing met een auto raakte een 46-jarige bestuurder lichtgewond. Rond 19.30 uur kreeg de politie oproepen binnen van het tumult. De man liet de tractor achter op een parkeerplaats van een supermarkt. De politie vond de man daar, nog steeds onder invloed, in de buurt van de tractor.",
+        "ctx_tags": [
+            {
+                "tag": "ramde",
+                "score": 0.4701
+            },
+            {
+                "tag": "jarige",
+                "score": 0.4576
+            },
+            {
+                "tag": "raakte",
+                "score": 0.4402
+            },
+            {
+                "tag": "sneeuwschuiver",
+                "score": 0.4396
+            },
+            {
+                "tag": "schade",
+                "score": 0.4339
+            }
+        ],
+        "img": "https://cdn.nos.nl/image/2021/02/02/712171/2560x1440a.jpg",
+        "img_caption": "een tractor met aanhangwagen",
+        "img_tags": [
+            {
+                "tag": "band",
+                "score": 0.9471
+            },
+            {
+                "tag": "landvoertuig",
+                "score": 0.9385
+            },
+            {
+                "tag": "wiel",
+                "score": 0.9239
+            },
+            {
+                "tag": "voertuig",
+                "score": 0.9095
+            },
+            {
+                "tag": "auto-onderdeel",
+                "score": 0.8290
+            }
+        ],
+        "type_name": "een krant of nieuwswebsite"
+    },
+    {
+        "ctx_title": "CO2-uitstoot door natuurbranden in 2021 hoogste ooit",
+        "ctx_url": "https://nos.nl/artikel/2408650-co2-uitstoot-door-natuurbranden-in-2021-hoogste-ooit",
+        "ctx_caption": "Bosbranden in het zuiden van Frankrijk, afgelopen zomer",
+        "ctx": "Natuurbranden veroorzaakten het afgelopen jaar naar schatting ongeveer 1760 megaton aan CO2-uitstoot. Dat is een record voor wat betreft de uitstoot door bosbranden, berekende het aarde-observatieprogramma van de Europese Unie, Copernicus. Door klimaatverandering zullen er steeds vaker bosbranden zijn, denken de wetenschappers van het programma. \"Hoge temperaturen, heftige onweersbuien, harde wind en ander extreem weer gaan steeds vaker voorkomen\", schrijft het Copernicus. Ook Sander Veraverbeke, klimaatwetenschapper aan de Vrije Universiteit Amsterdam, ziet een duidelijke trend. \"Als ik terugdenk aan vorige zomer met al die grote branden in het Middellandse Zeegebied, in de Verenigde Staten en Canada, en in Oost-Siberië, ben ik niet verwonderd dat dat nu tot records leidt\", zegt hij in het NOS Radio 1 Journaal. Vooral in de zomer op het noordelijk halfrond was er sprake van veel uitstoot, meldde Copernicus eerder. In juli en augustus werden er al records verbroken.",
+        "ctx_tags": [
+            {
+                "tag": "schrijft",
+                "score": 0.5801
+            },
+            {
+                "tag": "meldde",
+                "score": 0.5627
+            },
+            {
+                "tag": "wetenschappers",
+                "score": 0.538
+            },
+            {
+                "tag": "natuurbranden",
+                "score": 0.5366
+            },
+            {
+                "tag": "heftige",
+                "score": 0.53
+            }
+        ],
+        "img": "https://cdn.nos.nl/image/2021/02/02/712171/2560x1440a.jpg",
+        "img_caption": "een groep mensen in een bos",
+        "img_tags": [
+            {
+                "tag": "boom",
+                "score": 0.9996
+            },
+            {
+                "tag": "openlucht",
+                "score": 0.9992
+            },
+            {
+                "tag": "sneeuw",
+                "score": 0.9764
+            },
+            {
+                "tag": "skiën",
+                "score": 0.9289
+            },
+            {
+                "tag": "brandweerman",
+                "score": 0.7981
+            }
+        ],
+        "type_name": "een krant of nieuwswebsite"
+    },
+    {
+        "ctx_title": "Eerste torenvalk geboren in nest op balkon in Terneuzen",
+        "ctx_url": "https://nos.nl/artikel/2408650-co2-uitstoot-door-natuurbranden-in-2021-hoogste-ooit",
+        "ctx_caption": "De eieren op het balkon",
+        "ctx": "Het eerste ei van een torenvalk op een balkon in Terneuzen is uitgekomen. De andere eieren in het nest zijn nog heel. Eind mei bouwde een koppel torenvalken hun nest op het balkon. De torenvalk is een beschermde soort en dus liet de bewoner de vogels in alle rust broeden. Na ruim dertig dagen wachten, is de eerste torenvalk geboren, net nu de bewoner er niet is. Otto Peltzer, die op het huis past, ontdekte het kuiken vanmiddag. \"De moedervalk vliegt altijd weg als de balkondeur opengaat en daardoor zagen we dat er een ei was uitgekomen\", zegt hij tegen Omroep Zeeland. \nEcht bijzonder\n Volgens de Werkgroep Roofvogels Zeeland is de situatie op het balkon uniek. \"Het is echt bijzonder dat deze valken een balkon in de stad hebben uitgekozen. In Oost-Europa zie je het heel soms wel eens, maar in Nederland niet\", zegt een medewerker. De torenvalk staat sinds 2017 op de lijst van bedreigde soorten. De verwachting is dat de rest van de eieren de komende dagen uitkomt.",
+        "ctx_tags": [
+            {
+                "tag": "terneuzen",
+                "score": 0.5301
+            },
+            {
+                "tag": "uniek",
+                "score": 0.4682
+            },
+            {
+                "tag": "past",
+                "score": 0.447
+            },
+            {
+                "tag": "uitgekomen",
+                "score": 0.4415
+            },
+            {
+                "tag": "geboren",
+                "score": 0.4401
+            }
+        ],
+        "img": "https://cdn.nos.nl/image/2021/06/25/756503/2560x1440a.jpg",
+        "img_caption": "een groep blauwe en witte ballonnen",
+        "img_tags": [
+            {
+                "tag": "gras",
+                "score": 0.9985
+            },
+            {
+                "tag": "openlucht",
+                "score": 0.9905
+            },
+            {
+                "tag": "steen",
+                "score": 0.9745
+            },
+            {
+                "tag": "bal",
+                "score": 0.7693
+            },
+            {
+                "tag": "kerstboom",
+                "score": 0.6417
+            }
+        ],
+        "type_name": "een krant of nieuwswebsite"
     }
 ]
