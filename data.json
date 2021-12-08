@@ -300,5 +300,58 @@
             }
         ],
         "type_name": "een educatief lesprogramma"
+    },
+    {
+        "ctx_title": "Het spel van de Gouden Eeuw",
+        "ctx_url": "https://www.nemosciencemuseum.nl/nl/onderwijs/voortgezet-onderwijs/lesmateriaal/lesmateriaal/overig-voor-vo/",
+        "ctx_caption": "Foto: replica van de Prins Willem / Bron: Dirk van der Made",
+        "ctx": "Na een aantal succesvolle reizen van en naar Indië, verging VOC-schip Prins Willem in 1662. De volledige bemanning liet het leven en de hele lading ging verloren.",
+        "ctx_tags": [
+            {
+                "tag": "verging",
+                "score": 0.5684
+            },
+            {
+                "tag": "schip",
+                "score": 0.5318
+            },
+            {
+                "tag": "liet",
+                "score": 0.5314
+            },
+            {
+                "tag": "succesvolle",
+                "score": 0.5273
+            },
+            {
+                "tag": "volledige",
+                "score": 0.5233
+            }
+        ],
+        "img": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Sail_amsterdam_05_stern_prins_willem.jpg",
+        "img_caption": "een groot schip aangemeerd",
+        "img_tags": [
+            {
+                "tag": "lucht",
+                "score": 0.9934
+            },
+            {
+                "tag": "openlucht",
+                "score": 0.9599
+            },
+            {
+                "tag": "boot",
+                "score": 0.9402
+            },
+            {
+                "tag": "transport",
+                "score": 0.9290
+            },
+            {
+                "tag": "schip",
+                "score": 0.8687
+            }
+        ],
+        "type_name": "een educatief lesprogramma"
     }
 ]
